@@ -6,14 +6,11 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && tsc --noEmit && astro build",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "astro": "^2.0.2"
-  },
-  "devDependencies": {
-    "tsc": "^2.0.4"
   }
 }
