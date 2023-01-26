@@ -12,5 +12,8 @@
   },
   "dependencies": {
     "astro": "^2.0.2"
+  },
+  "devDependencies": {
+    "tsc": "^2.0.4"
   }
 }

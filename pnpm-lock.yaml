@@ -2,9 +2,13 @@ lockfileVersion: 5.4
 
 specifiers:
   astro: ^2.0.2
+  tsc: ^2.0.4
 
 dependencies:
   astro: 2.0.2
+
+devDependencies:
+  tsc: 2.0.4
 
 packages:
 
@@ -2617,6 +2621,11 @@ packages:
   /trough/2.1.0:
     resolution: {integrity: sha512-AqTiAOLcj85xS7vQ8QkAV41hPDIJ71XJB4RCUrzo/1GM2CQwhkJGaf9Hgr7BOugMRpgGUrqRg/DrBDl4H40+8g==}
     dev: false
+
+  /tsc/2.0.4:
+    resolution: {integrity: sha512-fzoSieZI5KKJVBYGvwbVZs/J5za84f2lSTLPYf6AGiIf43tZ3GNrI1QzTLcjtyDDP4aLxd46RTZq1nQxe7+k5Q==}
+    hasBin: true
+    dev: true
 
   /tsconfig-resolver/3.0.1:
     resolution: {integrity: sha512-ZHqlstlQF449v8glscGRXzL6l2dZvASPCdXJRWG4gHEZlUVx2Jtmr+a2zeVG4LCsKhDXKRj5R3h0C/98UcVAQg==}
