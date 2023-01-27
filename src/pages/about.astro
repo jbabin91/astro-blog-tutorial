@@ -1,4 +1,5 @@
 ---
+import Footer from "../components/Footer.astro";
 import Navigation from "../components/Navigation.astro";
 import "../styles/global.css";
 
@@ -39,7 +40,9 @@ const textCase = "uppercase";
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
     <style define:vars={{ skillColor, fontWeight, textCase }}>
       h1 {
@@ -93,5 +96,6 @@ const textCase = "uppercase";
         <p>My goal is not 3 days.</p>
       )
     }
+    <Footer />
   </body>
 </html>
