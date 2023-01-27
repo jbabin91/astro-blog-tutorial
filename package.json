@@ -8,18 +8,28 @@
     "start": "astro dev",
     "build": "astro check && tsc --noEmit && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
   "dependencies": {
+    "@astrojs/preact": "^2.0.0",
     "@astrojs/rss": "^2.1.0",
-    "astro": "^2.0.2"
+    "astro": "^2.0.2",
+    "preact": "^10.6.5"
   },
   "devDependencies": {
     "eslint": "^8.32.0",
+    "eslint-config-preact": "^1.3.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-unicorn": "^45.0.2",
     "prettier": "^2.8.3",
     "typescript": "^4.9.4"
+  },
+  "overrides": {
+    "react": "npm:@preact/compat@latest",
+    "react-dom": "npm:@preact/compat@latest"
   }
 }

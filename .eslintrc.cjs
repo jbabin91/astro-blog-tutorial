@@ -8,8 +8,14 @@ module.exports = {
   plugins: ['unicorn', 'prettier'],
   extends: ['plugin:unicorn/recommended', 'plugin:prettier/recommended'],
   parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  rules: {},
+  rules: {
+    'unicorn/filename-case': ['error', { cases: { pascalCase: true, camelCase: true } }],
+    'unicorn/prevent-abbreviations': ['error', { ignore: [/\.d$/] }],
+  },
 };
